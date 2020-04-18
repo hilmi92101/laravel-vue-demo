@@ -27,9 +27,10 @@ Route::prefix('tests')->group(function () {
 
 });
 
-Route::prefix('learning-vue')->group(function () {
+Route::prefix('demo')->group(function () {
 
 	Route::get('/', 'LearningVue\BasicController@index');
+	Route::get('/axios', 'LearningVue\BasicController@axios');
 	
 });
 

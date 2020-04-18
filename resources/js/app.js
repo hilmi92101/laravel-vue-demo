@@ -21,8 +21,11 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
 Vue.component('basic-component', require('./components/BasicComponent.vue').default);
 Vue.component('learning-data-property', require('./components/learning/DataPropertyComponent.vue').default);
+Vue.component('axios-example', require('./components/learning/AxiosExampleComponent.vue').default);
+
 
 Vue.component('vue-date-picker', require('./components/ui/DatePickerComponent.vue').default);
 

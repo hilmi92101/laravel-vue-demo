@@ -5,6 +5,8 @@ namespace App\Http\Controllers\LearningVue;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\User;
+
 class BasicController extends Controller
 {
     
@@ -13,4 +15,14 @@ class BasicController extends Controller
 
     	return view('learning-vue.index');
     }
+
+
+    public function axios()
+    {
+
+    	$users = User::all();
+
+    	return response()->json($users);
+    }
+
 }
