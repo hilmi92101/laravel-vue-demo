@@ -1806,8 +1806,19 @@ __webpack_require__.r(__webpack_exports__);
     return {
       time1: null,
       time2: null,
-      time3: null
+      time3: null,
+      startDate: null,
+      endDate: null
     };
+  },
+  methods: {
+    getStartDate: function getStartDate() {
+      if (this.time3 !== null) {
+        var data = this.time3;
+        this.startDate = data[0];
+        this.endDate = data[1];
+      }
+    }
   }
 });
 
@@ -55529,6 +55540,7 @@ var render = function() {
         [
           _c("date-picker", {
             attrs: { range: "" },
+            on: { change: _vm.getStartDate },
             model: {
               value: _vm.time3,
               callback: function($$v) {
@@ -55552,7 +55564,11 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-4" }, [
-        _c("p", [_vm._v("Date 3: " + _vm._s(_vm.time3))])
+        _c("p", [_vm._v("Date 3: " + _vm._s(_vm.time3))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Start Date: " + _vm._s(_vm.startDate))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("End Date: " + _vm._s(_vm.endDate))])
       ])
     ])
   ])
