@@ -12,7 +12,8 @@
 	<h1 class="example">Example</h1>
 	<div id="app">
 		
-		<learning-data-property></learning-data-property>
+
+		<vue-date-picker></vue-date-picker>
 		
 	</div>
 <script src="{{ asset('js/app.js') }}"></script>
