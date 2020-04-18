@@ -6382,6 +6382,25 @@ exports.push([module.i, "\n.example[data-v-21b42350] {\n  color: red;\n}\n", ""]
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\np[data-v-ea9a991e] {\n\n\tdisplay: block;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/lib/css-base.js":
 /*!*************************************************!*\
   !*** ./node_modules/css-loader/lib/css-base.js ***!
@@ -54730,6 +54749,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -55421,10 +55470,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e& ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -55436,44 +55485,77 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("date-picker", {
-        attrs: { valueType: "format" },
-        model: {
-          value: _vm.time1,
-          callback: function($$v) {
-            _vm.time1 = $$v
-          },
-          expression: "time1"
-        }
-      }),
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-12 mb-3" },
+        [
+          _c("date-picker", {
+            attrs: { valueType: "format" },
+            model: {
+              value: _vm.time1,
+              callback: function($$v) {
+                _vm.time1 = $$v
+              },
+              expression: "time1"
+            }
+          })
+        ],
+        1
+      ),
       _vm._v(" "),
-      _c("date-picker", {
-        attrs: { type: "datetime" },
-        model: {
-          value: _vm.time2,
-          callback: function($$v) {
-            _vm.time2 = $$v
-          },
-          expression: "time2"
-        }
-      }),
+      _c(
+        "div",
+        { staticClass: "col-md-12 mb-3" },
+        [
+          _c("date-picker", {
+            attrs: { type: "datetime" },
+            model: {
+              value: _vm.time2,
+              callback: function($$v) {
+                _vm.time2 = $$v
+              },
+              expression: "time2"
+            }
+          })
+        ],
+        1
+      ),
       _vm._v(" "),
-      _c("date-picker", {
-        attrs: { range: "" },
-        model: {
-          value: _vm.time3,
-          callback: function($$v) {
-            _vm.time3 = $$v
-          },
-          expression: "time3"
-        }
-      })
-    ],
-    1
-  )
+      _c(
+        "div",
+        { staticClass: "col-md-12 mb-3" },
+        [
+          _c("date-picker", {
+            attrs: { range: "" },
+            model: {
+              value: _vm.time3,
+              callback: function($$v) {
+                _vm.time3 = $$v
+              },
+              expression: "time3"
+            }
+          })
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-4" }, [
+        _c("p", [_vm._v("Date 1: " + _vm._s(_vm.time1))])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-4" }, [
+        _c("p", [_vm._v("Date 2: " + _vm._s(_vm.time2))])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-4" }, [
+        _c("p", [_vm._v("Date 3: " + _vm._s(_vm.time3))])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -72196,9 +72278,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _DatePickerComponent_vue_vue_type_template_id_ea9a991e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DatePickerComponent.vue?vue&type=template&id=ea9a991e& */ "./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&");
+/* harmony import */ var _DatePickerComponent_vue_vue_type_template_id_ea9a991e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DatePickerComponent.vue?vue&type=template&id=ea9a991e&scoped=true& */ "./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&scoped=true&");
 /* harmony import */ var _DatePickerComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DatePickerComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ui/DatePickerComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _DatePickerComponent_vue_vue_type_style_index_0_id_ea9a991e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css& */ "./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -72206,13 +72290,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _DatePickerComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _DatePickerComponent_vue_vue_type_template_id_ea9a991e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _DatePickerComponent_vue_vue_type_template_id_ea9a991e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _DatePickerComponent_vue_vue_type_template_id_ea9a991e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _DatePickerComponent_vue_vue_type_template_id_ea9a991e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "ea9a991e",
   null
   
 )
@@ -72238,19 +72322,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css&":
+/*!*********************************************************************************************************************!*\
+  !*** ./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_style_index_0_id_ea9a991e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ui/DatePickerComponent.vue?vue&type=style&index=0&id=ea9a991e&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_style_index_0_id_ea9a991e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_style_index_0_id_ea9a991e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_style_index_0_id_ea9a991e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_style_index_0_id_ea9a991e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_style_index_0_id_ea9a991e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&scoped=true&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&scoped=true& ***!
+  \*******************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_template_id_ea9a991e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./DatePickerComponent.vue?vue&type=template&id=ea9a991e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_template_id_ea9a991e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_template_id_ea9a991e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./DatePickerComponent.vue?vue&type=template&id=ea9a991e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ui/DatePickerComponent.vue?vue&type=template&id=ea9a991e&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_template_id_ea9a991e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_template_id_ea9a991e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatePickerComponent_vue_vue_type_template_id_ea9a991e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

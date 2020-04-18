@@ -9,11 +9,13 @@
 </head>
 <body>
 
-	<h1 class="example">Example</h1>
 	<div id="app">
 		
-
-		<vue-date-picker></vue-date-picker>
+		<div class="container">
+			<h1 class="mt-3 mb-4">Component</h1>
+			<vue-date-picker></vue-date-picker>
+		</div>
+		
 		
 	</div>
 <script src="{{ asset('js/app.js') }}"></script>
