@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::prefix('tests')->group(function () {
+
+	Route::get('/test-compiled-css-js', 'Tests\BasicController@cssjs');
+	Route::get('/check-vue', 'Tests\BasicController@checkVue');
+	
+});
+
+
