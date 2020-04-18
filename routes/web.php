@@ -25,7 +25,7 @@ Route::prefix('tests')->group(function () {
 
 Route::prefix('learning-vue')->group(function () {
 
-	Route::get('/data-property', 'LearningVue\BasicController@dataProperty');
+	Route::get('/', 'LearningVue\BasicController@index');
 	
 });
 

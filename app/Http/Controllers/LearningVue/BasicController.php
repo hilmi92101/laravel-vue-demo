@@ -8,9 +8,9 @@ use App\Http\Controllers\Controller;
 class BasicController extends Controller
 {
     
-    public function dataProperty()
+    public function index()
     {
 
-    	return view('learning-vue.data-property');
+    	return view('learning-vue.index');
     }
 }

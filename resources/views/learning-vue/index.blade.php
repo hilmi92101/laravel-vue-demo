@@ -9,7 +9,7 @@
 </head>
 <body>
 
-
+	<h1 class="example">Example</h1>
 	<div id="app">
 		
 		<learning-data-property></learning-data-property>

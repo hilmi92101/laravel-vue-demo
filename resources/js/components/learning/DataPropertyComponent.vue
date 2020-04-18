@@ -1,7 +1,12 @@
 <template>
     <div class="container">
-        <h1>Name: {{ name }}</h1>
-        <h1>Age: {{ age }}</h1>
+
+    	<h1>Data Property</h1>
+
+        <p>Name: {{ name }}</p>
+        <p class="example">Age: {{ age }}</p>
+
+        <button class="btn btn-primary" @click="addAge">Add Age</button>
     </div>
 </template>
 
@@ -19,6 +24,21 @@
 	    		age: 28,
 
 	    	}
+	    }, 
+
+	    methods: {
+
+	    	addAge: function(){
+
+				this.age++;
+
+			}
 	    }
     }
 </script>
+
+<style scoped>
+	.example {
+	  color: red;
+	}
+</style>
