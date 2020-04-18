@@ -20,6 +20,12 @@ Route::prefix('tests')->group(function () {
 
 	Route::get('/test-compiled-css-js', 'Tests\BasicController@cssjs');
 	Route::get('/check-vue', 'Tests\BasicController@checkVue');
+
+});
+
+Route::prefix('learning-vue')->group(function () {
+
+	Route::get('/data-property', 'LearningVue\BasicController@dataProperty');
 	
 });
 
