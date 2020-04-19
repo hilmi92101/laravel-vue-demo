@@ -9,6 +9,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+require('./plugins');
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -28,6 +30,9 @@ Vue.component('axios-example', require('./components/learning/AxiosExampleCompon
 
 
 Vue.component('vue-date-picker', require('./components/ui/DatePickerComponent.vue').default);
+
+Vue.component('vue-toast', require('./components/ui/ToastComponent.vue').default);
+
 
 
 /**
