@@ -1882,8 +1882,24 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     successMessage: function successMessage() {
-      this.$toasted.show('Successfully Registered').goAway(1500);
-      Vue.toasted.show('Successfully Registered').goAway(1500);
+      this.$toasted.show('Successfully Registered', {
+        theme: "toasted-primary",
+        position: "top-right",
+        duration: 500,
+        type: 'success'
+      });
+      Vue.toasted.show('Successfully Registered', {
+        theme: "outline",
+        position: "top-right",
+        duration: 500,
+        type: 'info'
+      });
+      Vue.toasted.show('Successfully Registered', {
+        theme: "bubble",
+        position: "top-right",
+        duration: 500,
+        type: 'error'
+      });
     }
   }
 });
@@ -55699,7 +55715,7 @@ var render = function() {
     _c(
       "button",
       { staticClass: "btn btn-success", on: { click: _vm.successMessage } },
-      [_vm._v("Success Message")]
+      [_vm._v("Output Messages")]
     )
   ])
 }
@@ -72668,11 +72684,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_toasted__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-toasted */ "./node_modules/vue-toasted/dist/vue-toasted.min.js");
 /* harmony import */ var vue_toasted__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_toasted__WEBPACK_IMPORTED_MODULE_0__);
 
-Vue.use(vue_toasted__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  position: 'top-right',
-  theme: 'outline',
-  className: 'text-success'
-});
+Vue.use(vue_toasted__WEBPACK_IMPORTED_MODULE_0___default.a);
 
 /***/ }),
 
