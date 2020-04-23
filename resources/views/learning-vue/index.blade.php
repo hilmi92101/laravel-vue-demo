@@ -13,7 +13,7 @@
 		
 		<div class="container">
 			<h1 class="mt-3 mb-4">Component</h1>
-			<vue-modal></vue-modal>
+			<vue-date-picker></vue-date-picker>
 		</div>
 		
 		

@@ -25,14 +25,11 @@ require('./plugins');
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 Vue.component('basic-component', require('./components/BasicComponent.vue').default);
+
 Vue.component('learning-data-property', require('./components/learning/DataPropertyComponent.vue').default);
 Vue.component('axios-example', require('./components/learning/AxiosExampleComponent.vue').default);
-
-
 Vue.component('vue-date-picker', require('./components/ui/DatePickerComponent.vue').default);
-
 Vue.component('vue-toast', require('./components/ui/ToastComponent.vue').default);
-
 Vue.component('vue-modal', require('./components/ui/ModalComponent.vue').default);
 
 
