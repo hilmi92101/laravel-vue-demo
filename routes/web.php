@@ -33,4 +33,6 @@ Route::prefix('demo')->group(function () {
 	
 });
 
+Route::post('/users/paginate', 'UserController@getPaginateUser');
+
 

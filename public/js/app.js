@@ -1985,18 +1985,51 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
+    this.initialCall();
   },
   props: ['title'],
+  data: function data() {
+    return {
+      clickedPageNum: null,
+      users: null
+    };
+  },
   methods: {
     clickCallback: function clickCallback(pageNum) {
-      console.log(pageNum);
+      //console.log(pageNum);
+      this.clickedPageNum = pageNum;
       this.dbCall();
     },
     dbCall: function dbCall() {
-      console.log('Loading data....');
+      var data = {
+        clickedPageNum: this.clickedPageNum
+      };
+      var vm = this;
+      axios.post('/users/paginate', data).then(function (response) {
+        //console.log(response.data);
+        //console.log(response.data.users);
+        vm.users = response.data.users;
+      })["catch"](function (error) {//console.log(error);
+      });
+    },
+    initialCall: function initialCall() {
+      var data = {
+        clickedPageNum: 1
+      };
+      var vm = this;
+      axios.post('/users/paginate', data).then(function (response) {
+        //console.log(response.data);
+        //console.log(response.data.users);
+        vm.users = response.data.users;
+      })["catch"](function (error) {//console.log(error);
+      });
     }
   }
 });
@@ -56009,6 +56042,14 @@ var render = function() {
     { staticClass: "container" },
     [
       _c("h1", [_vm._v(_vm._s(_vm.title))]),
+      _vm._v(" "),
+      _c(
+        "ul",
+        _vm._l(_vm.users, function(user) {
+          return _c("li", [_vm._v(_vm._s(user.name))])
+        }),
+        0
+      ),
       _vm._v(" "),
       _c("paginate", {
         attrs: {
