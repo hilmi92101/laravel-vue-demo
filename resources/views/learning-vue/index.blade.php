@@ -16,7 +16,7 @@
 			<h1 class="mt-3 mb-4">Component</h1>
 			
 
-			<vue-datatable></vue-datatable>
+			<vue-datatable-good></vue-datatable-good>
 		</div>
 		
 		

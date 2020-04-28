@@ -24,7 +24,9 @@ class UsersSeeder extends Seeder
 		                
 	            'name' => $faker->name,
 	            'email' => $faker->email,
-	            'password' => Hash::make('qawsedrf')
+	            'password' => Hash::make('qawsedrf'),
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s")
 	        ];
 			array_push($data, $user);
 		}
