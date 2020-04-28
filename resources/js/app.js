@@ -32,6 +32,7 @@ Vue.component('vue-date-picker', require('./components/ui/DatePickerComponent.vu
 Vue.component('vue-toast', require('./components/ui/ToastComponent.vue').default);
 Vue.component('vue-modal', require('./components/ui/ModalComponent.vue').default);
 Vue.component('vue-pagination', require('./components/ui/PaginationComponent.vue').default);
+Vue.component('vue-datatable', require('./components/ui/DatatableComponent.vue').default);
 
 
 
